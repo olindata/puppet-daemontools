@@ -27,7 +27,7 @@ define daemontools::service($script) {
   file { "/etc/service/${name}":
     ensure  => link,
     target  => "/var/lib/service/${name}",
-    require => File["/var/lib/servce/${name}"],
+    require => File["/var/lib/service/${name}"],
   }
 
 }
