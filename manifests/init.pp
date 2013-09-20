@@ -11,5 +11,11 @@ class daemontools {
     owner  => "root",
     group  => "root",
   }
+  
+  file { "/etc/service":
+    ensure  => directory,
+    owner   => 'root',
+    group   => 'root',
+  }
 
 }
